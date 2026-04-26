@@ -1,151 +1,61 @@
-// Custom Script
-// Developed by: Samson.Onna
-var customScripts = {
-    profile: function () {
-        // portfolio
-        if ($('.isotopeWrapper').length) {
-            var $container = $('.isotopeWrapper');
-            var $resize = $('.isotopeWrapper').attr('id');
-            // initialize isotope
-            $container.isotope({
-                itemSelector: '.isotopeItem',
-                resizable: false, // disable normal resizing
-                masonry: {
-                    columnWidth: $container.width() / $resize
-                }
-            });
-            $("a[href='#top']").click(function () {
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-                return false;
-            });
-            $('.navbar-inverse').on('click', 'li a', function () {
-                $('.navbar-inverse .in').addClass('collapse').removeClass('in').css('height', '1px');
-            });
-            $('#filter a').click(function () {
-                $('#filter a').removeClass('current');
-                $(this).addClass('current');
-                var selector = $(this).attr('data-filter');
-                $container.isotope({
-                    filter: selector,
-                    animationOptions: {
-                        duration: 1000,
-                        easing: 'easeOutQuart',
-                        queue: false
-                    }
-                });
-                return false;
-            });
-            $(window).smartresize(function () {
-                $container.isotope({
-                    // update columnWidth to a percentage of container width
-                    masonry: {
-                        columnWidth: $container.width() / $resize
-                    }
-                });
-            });
-        }
-    },
-    fancybox: function () {
-        // fancybox
-        $(".fancybox").fancybox();
-    },
-    onePageNav: function () {
+document.addEventListener('DOMContentLoaded', function () {
+    if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'manual';
+    }
 
-        		if($('#main-nav ul li:first-child').hasClass('active')){
-					$('#main-nav').css('background','none');
-		}
-        $('#mainNav').onePageNav({        
-            currentClass: 'active',
-            changeHash: false,
-            scrollSpeed: 950,
-            scrollThreshold: 0.2,
-            filter: '',
-            easing: 'swing',
-            begin: function () {
-                //I get fired when the animation is starting
-				
-            },
-            end: function () {
-                //I get fired when the animation is ending
-				if(!$('#main-nav ul li:first-child').hasClass('active')){
-					$('.header').addClass('addBg');					
-				}else{
-						$('.header').removeClass('addBg');
-				}
-				
-            },
-            scrollChange: function ($currentListItem) {
-                //I get fired when you enter a section and I pass the list item of the section
-				if(!$('#main-nav ul li:first-child').hasClass('active')){
-					$('.header').addClass('addBg');
-				}else{
-						$('.header').removeClass('addBg');
-				}
+    if (window.location.hash) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+
+    window.scrollTo(0, 0);
+
+    var navToggle = document.querySelector('.nav-toggle');
+    var siteNav = document.querySelector('.site-nav');
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll('.site-nav a'));
+    var yearNode = document.getElementById('current-year');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+
+    if (yearNode) {
+        yearNode.textContent = String(new Date().getFullYear());
+    }
+
+    if (navToggle && siteNav) {
+        navToggle.addEventListener('click', function () {
+            var isOpen = siteNav.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                siteNav.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
+    if (!('IntersectionObserver' in window) || !sections.length) {
+        return;
+    }
+
+    var activateLink = function (id) {
+        navLinks.forEach(function (link) {
+            var isActive = link.getAttribute('href') === '#' + id;
+            link.classList.toggle('is-active', isActive);
+        });
+    };
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                activateLink(entry.target.id);
             }
         });
-    },
-    slider: function () {
-        $('#da-slider').cslider({
-            autoplay: true,
-            bgincrement: 0
-        });
-    },
-    owlSlider: function () {
-        var owl = $("#owl-demo");
-        owl.owlCarousel();
-        // Custom Navigation Events
-        $(".next").click(function () {
-            owl.trigger('owl.next');
-        })
-        $(".prev").click(function () {
-            owl.trigger('owl.prev');
-        })
-    },
-    bannerHeight: function () {
-        var bHeight = $(".banner-container").height();
-        $('#da-slider').height(bHeight);
-        $(window).resize(function () {
-            var bHeight = $(".banner-container").height();
-            $('#da-slider').height(bHeight);
-        });
-    },
-    init: function () {
-        customScripts.onePageNav();
-        customScripts.profile();
-        customScripts.fancybox();
-        customScripts.slider();
-        customScripts.owlSlider();
-        customScripts.bannerHeight();
-    }
-}
-$('document').ready(function () {
-    customScripts.init();
-	$('#diagram-id-1').diagram({ 
-			size: "190",
-			borderWidth: "10",
-			bgFill: "#95a5a6",
-			frFill: "#3498db",
-			textSize: 54,
-			textColor: '#1a1a1a'
-		}); 
-		$('#diagram-id-2').diagram({ 
-			size: "190",
-			borderWidth: "10",
-			bgFill: "#95a5a6",
-			frFill: "#3498db",
-			textSize: 54,
-			textColor: '#333'
-		});
+    }, {
+        rootMargin: '-35% 0px -50% 0px',
+        threshold: 0.1
+    });
 
-		$('#diagram-id-3').diagram({ 
-			size: "190",
-			borderWidth: "10",
-			bgFill: "#95a5a6",
-			frFill: "#3498db",
-			textSize: 54,
-			textColor: '#1a1a1a'
-		});
-		$(window).load(function() { 
-			  $('#filter .current').trigger('click');
-		});
+    sections.forEach(function (section) {
+        observer.observe(section);
+    });
 });

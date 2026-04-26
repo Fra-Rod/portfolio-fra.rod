@@ -1,30 +1,21 @@
-Note
-====
-Free-Portfolio-HTML5-Responsive-Website-Sam
+Project notes
+=============
 
-Sam Doe is a clean, modern and responsive professional looking resume / personal portfolio template for all designer and developer. well crafted Designed for user experience on mulit devices like desktop, laptop, smartphones. This template is built on Bootstrap framework which give flexibilty to customeise the theme easly as per the your requirements. Included with all latest technology HTML5 CSS3, jQuery and bootstrap.
+Este repositorio contiene el portfolio personal de Francisco Rodríguez en formato estático.
 
+La portada principal y su capa visual se han reescrito para usar una estructura propia, contenido propio y una maquetación responsive personalizada.
 
-Key features
-Twitter Bootstrap 3.2.0
-Valid HTML5 & CSS3
-FontAwesome Icons
-Gallery
-Fully Responsive
-Browser Compatability
-Contact Form
+Dependencias de terceros utilizadas actualmente
+===============================================
 
-Responsive, Bootstrap Mobile First Web Template
- 
-Author URI: http://webthemez.com/
+- Font Awesome para algunos iconos.
+- Fuentes de Google servidas desde CSS.
 
-License: Free to use for personal and commercial, but you need to place back link in the bottom of the template(Template by: webthemez.com).
+Recursos del repositorio
+========================
 
-
-Credits
-=======
-Framework  http://getbootstrap.com
-Images	Unsplash (http://unsplash.com - CC0 licensed) 
-Icons	Font Awesome (http://fortawesome.github.com/Font-Awesome/)
-Other	html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+- index.html como punto de entrada principal.
+- css/styles.css como hoja de estilo principal.
+- js/custom.js para comportamiento ligero de navegación.
+- Web Cris/ como proyecto histórico enlazado desde el portfolio.
 

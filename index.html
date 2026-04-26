@@ -1,846 +1,335 @@
 <!doctype html>
-<!-- anyado comentario -->
-<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
+<html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!--[if lt IE 9]> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <![endif]-->
-<title>Francisco Rodríguez | Software Developer Portfolio</title>
-<meta name="description" content="">
-<meta name="author" content="WebThemez">
-<!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-<!--[if lte IE 8]>
-		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
-	<![endif]-->
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/da-slider.css" />
-<link rel="stylesheet" href="css/styles.css" />
-<!-- Font Awesome -->
-<link href="css/font-awesome.min.css" rel="stylesheet">
-
-<!-- <link href="css/bootstrap2.min.css" rel="stylesheet"> -->
-<!-- <link href="css/agency.css" rel="stylesheet"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Francisco Rodríguez | Software Developer</title>
+<meta name="description" content="Portfolio de Francisco Rodríguez, software developer enfocado en Java, SQL, arquitectura web e IA aplicada al desarrollo.">
+<meta name="author" content="Francisco Rodríguez">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-<header class="header">
-  <div class="container">
-    <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        </div>
-      <!--/.navbar-header-->
-      <div id="main-nav" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav" id="mainNav">
-          <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-          <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
-          <li><a href="#skills" class="scroll-link">Skills</a></li>
-          <!-- <li><a href="#experience" class="scroll-link">Experience</a></li> -->
-          <li><a href="#portfolio" class="scroll-link">Portfolio</a></li>
-          <li><a href="#contactUs" class="scroll-link">Contact</a></li>
-        </ul>
-      </div>
-      <!--/.navbar-collapse--> 
+<header class="site-header">
+  <div class="shell header-bar">
+    <a class="brand" href="#home" aria-label="Inicio de Francisco Rodríguez">
+      <span class="brand-mark">
+        <img src="images/perfil/Francis Cara.png" alt="Foto de Francis">
+      </span>
+      <span class="brand-copy">
+        <strong>Francisco Rodríguez</strong>
+        <small>Software Developer</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir navegación">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <a href="#home">Inicio</a>
+      <a href="#about">Perfil</a>
+      <a href="#stack">Stack</a>
+      <a href="#aws-capabilities">AWS</a>
+      <a href="#advanced-projects">IA</a>
+      <a href="#contact">Contacto</a>
     </nav>
-    <!--/.navbar--> 
   </div>
-  <!--/.container--> 
 </header>
-<!--/.header-->
-<div id="#top"></div>
-<section id="home">
-  <div class="banner-container"> <img src="images/Portada4.png" alt="banner" />
-    <div class="container banner-content"> 
-            <div class="row">
-        <header class="centered">
-          <h1>Francisco Rodríguez</h1>
-          <p>Passionate Software Developer</p>
-          <p>Building robust backend solutions and modern web experiences</p>
-        </header>
-                <div class="social-icons">
-                        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-						            <!-- <a href="https://www.google.com/"><i class="fa fa-google-plus"></i></a> -->
-                        <!-- <a href="https://www.dribbble.com/"><i class="fa fa-dribbble"></i></a> -->
-                        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a>
-                         <!-- <a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a> -->
-                         <a href="https://github.com/"><i class="fa fa-github"></i></a> 
-                         <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a> 
-                         <a href="https://wa.me/647204276/"><i class="fa fa-phone fa-fw"></i></a> 
-                         <a href="mailto:fra.rod@outlook.com"><i class="fa fa-envelope-o fa-fw"></i></a>
-                    
-                </div>
-                <!-- <a href="#" class="hireMe">Hire Me</a> -->
-            </div> 
-  </div>
-</section>
-<section id="introText">
-  <div class="container">
-    <div>
-  <h1>I design and maintain backend systems, mainly using Java and PostgreSQL</h1>
-  <p>I also have experience with user interfaces in C#, Android apps in Kotlin, and web development with HTML, CSS, and JavaScript.</p>
-    </div>
-  </div>
-</section>
-<!--About-->
-<section id="aboutUs">
-  <div class="container">
-    <div class="row"> 
-      <!-- item -->
-      <div class="col-md-4 tileBox"> <img src="images/Foto.jpg" alt="yo"/> </div>
-      <div class="col-md-8 tileBox">
-        <div class="txtHead">
-          <h2>My name is Francisco Rodríguez</h2>
-          <h3>I am a software developer with experience implementing new features and maintaining applications to ensure reliability and performance.</h3>
-        </div>
-        <p>My passion for programming started with a higher degree in Multiplatform Application Development (DAM), where I learned the fundamentals to enter the tech world.<br/>
-          <br/>
-          Since then, I have continued to grow with further studies in Web Development (DAW), security, and data analysis.</p>
-      </div>
-      <!-- end: --> 
-    </div>
-  </div>
-</section>
-<!--Quote-->
-<section id="quote" class="bg-parlex">
-  <div class="parlex-back">
-    <div class="container">
-     <div class="row">
-	<div class="col-md-12">      <h2>“Dreams are extremely important. You can’t do it unless you imagine it.” <span>-George Lucas</span></h2></div>
-      </div>
-    </div>
-    <!--/.container--> 
-  </div>
-</section>
 
-<!--Skills-->
-<section id="skills" class="secPad white">
-  <div class="container">
-    <div class="heading "> 
-      <!-- Heading -->
-  <h2>Programming Languages</h2>
-  <p>These are the languages I have used throughout my career. The top three are where I feel most proficient and confident.</p>
-      <p>
-        <img src="images/Iconos_Lenguajes/bash.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/CSharp2.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/css.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/git.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/html.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/Java2.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/js.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/kotlin.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/php.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/Python.png" alt="github" width="80px"/>
-        <img src="images/Iconos_Lenguajes/sql.png" alt="github" width="80px"/>
-      </p>
-    </div>
-    <div class="row skillContainer">
-      <div class="col-md-4 skillBox">
-        <div id="diagram-id-1" class="diagram" data-percent="95%"></div>
-        <div class="chart-text">
-          <h4>Java</h4>
-          <p></p>
+<main>
+  <section class="hero" id="home">
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <h1>Construyo bases sólidas para software que tiene que durar.</h1>
+        <p class="hero-lead">Soy Francisco Rodríguez, software developer enfocado en backend con Java, SQL y arquitectura web. Uso IA de forma práctica para acelerar análisis, implementación y revisión sin perder criterio técnico.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#stack">Ver stack</a>
+          <a class="button button-secondary" href="mailto:fra.rod@outlook.com?subject=Contacto%20desde%20tu%20portfolio">Contactar</a>
         </div>
-      </div>
-      <div class="col-md-4 skillBox">
-        <div id="diagram-id-2" class="diagram" data-percent="70%"></div>
-        <div class="chart-text">
-          <h4>C#</h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="col-md-4 skillBox">
-        <div id="diagram-id-3" class="diagram" data-percent="85%"></div>
-        <div class="chart-text">
-          <h4>SQL</h4>
-          <p></p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-6">
-  <h2>Technologies</h2>
-  <p class="mrgBtm20">These are the tools and platforms I have mastered during my professional journey. The chart shows my comfort level with each.</p>
-        <p>          
-          <img src="images/Iconos_Tecnologias/AndroidStudio.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/DBeaver.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Docker.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Eclipse.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Microsoft_visual_studio_code.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/MicrosoftAccess.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Oracle.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Portainer.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/GitHub.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Intellij.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Jira.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Microsoft_visual_studio1.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Postgresql.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/Postman.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/spring.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/keycloak.png" alt="github" width="40px"/>
-          <img src="images/Iconos_Tecnologias/aws.png" alt="github" width="40px"/>
-        </p>
-      </div>
-      <div class="col-sm-6"> <br/>
-        <br/>
-        <br/>
-        <div class="row">
-          <div class="col-md-2 skilltitle"><b>STS</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> <span class="sr-only">90% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="col-md-2 skilltitle"><b>Postman</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"> <span class="sr-only">80% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="col-md-2 skilltitle"><b>AWS y Git</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"> <span class="sr-only">75% Complete</span> </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-
-          
-          <div class="col-md-2 skilltitle"><b>DBeaver</b></div>
-          <div class="col-md-10">
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"> <span class="sr-only">75% Complete</span> </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-2 skilltitle"><b>VisualStudio</b></div>
-            <div class="col-md-10">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"> <span class="sr-only">75% Complete</span> </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--Experience-->
-<!-- <section id="experience" class="secPad">
-<div class="container">
-<div class="heading">  -->
-  <!-- Heading -->
-  <!-- <h2>Experiencia</h2>
-  <br/>
-  <h4>12 Years Experience!</h4>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
-</div>
-
-<div class="row">
-	<div class="col-md-3 col-sm-6">
-		<div class="exp-wrapper">
-			<img src="images/client-1.png" width="90" alt="Name">
-			<h3>Work Day Look</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-		</div>
-	</div>
-	<div class="col-md-3 col-sm-6">
-		<div class="exp-wrapper">
-			<img src="images/client-5.png" width="90" alt="Name">
-			<h3>Yahoo</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been. </p>
-		</div>
-	</div>
-	<div class="col-md-3 col-sm-6">
-		<div class="exp-wrapper">
-			<img src="images/client-3.png" width="90" alt="Name">
-			<h3>jQuery</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-		</div>
-	</div>
-	<div class="col-md-3 col-sm-6">
-		<div class="exp-wrapper">
-			<img src="images/client-4.png" width="90" alt="Name">
-			<h3>Flickr</h3>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-		</div>
-	</div> -->
-	 
-</div>		
-</section>
-
-<!--Portfolio-->
-<section id="portfolio" class="page-section section appear clearfix secPad">
-  <div class="container">
-    <div class="heading"> 
-      <!-- Heading -->
-  <h2>Portfolio</h2>
-  <p>Here are some of the most important projects I have worked on.</p>
-    </div>
-    <div class="row">
-      <nav id="filter" class="col-md-12">
-        <ul>
-          <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-          <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Front-End</a></li>
-          <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Back-End</a></li>
-          <li><a href="#" class="btn-theme btn-small" data-filter=".print">Android</a></li>
+        <ul class="hero-points">
+          <li>Backend con Java y modelado de datos relacional</li>
+          <li>Mantenimiento evolutivo con foco en estabilidad y claridad</li>
+          <li>IA aplicada para reducir tiempos de entrega y revisión</li>
         </ul>
-      </nav>
-      <div class="col-md-12">
-        <div class="row">
-          <div class="portfolio-items isotopeWrapper clearfix" id="3">
-            
+      </div>
 
-            <article class="col-sm-4 isotopeItem webdesign">
-              <div class="portfolio-item"> 
-                <img src="images/Proyectos/ProyectoWebCrisPortada.png" alt="" height="270px" />
-                <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                  <div class="portfolio-desc align-center">
-                    <div class="portfolio-item"> 
-                      <!-- <a href="images/portfolio/img1.jpg" class="fancybox"> -->
-                      <h5>Página Web</h5>
-                      <i class="fa fa-plus-square-o fa-2x"></i>
-                      <!-- </a>  -->
-                    <!-- </div> -->
-                  <!-- </div> -->
-                </a>
-              </div>
-            </article>
-
-            <!--  -->
-
-            <article class="col-sm-4 isotopeItem photography">
-              <div class="portfolio-item"> <img src="images/portfolio/img2.jpg" alt="" />
-                <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                <div class="portfolio-desc align-center">
-                  <!-- <div class="folio-info"> <a href="images/portfolio/img2.jpg" class="fancybox"> -->
-                    <h5>PROYECTO DOS</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i>
-                  </a> 
-                <!-- </div>
-                
-                  </div> -->
-                
-              </div>
-            </article>
-
-            <!--  -->
-
-            <article class="col-sm-4 isotopeItem photography">
-              <div class="portfolio-item"> <img src="images/portfolio/img3.jpg" alt="" />
-                <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                <div class="portfolio-desc align-center">
-                  <!-- <div class="folio-info"> <a href="images/portfolio/img3.jpg" class="fancybox"> -->
-                    <h5>PROYECTO TRES</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i>
-                  </a> 
-                <!-- </div>
-                </div> -->
-              </div>
-            </article>
-
-
-
-
-
-
-            
-            <article class="col-sm-4 isotopeItem print">
-              <div class="portfolio-item"> <img src="images/portfolio/img4.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img4.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem photography">
-              <div class="portfolio-item"> <img src="images/portfolio/img5.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img5.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem webdesign">
-              <div class="portfolio-item"> <img src="images/portfolio/img6.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img6.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <!-- <article class="col-sm-4 isotopeItem print">
-              <div class="portfolio-item"> <img src="images/portfolio/img7.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img7.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem photography">
-              <div class="portfolio-item"> <img src="images/portfolio/img8.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img8.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-4 isotopeItem print">
-              <div class="portfolio-item"> <img src="images/portfolio/img9.jpg" alt="" />
-                <div class="portfolio-desc align-center">
-                  <div class="folio-info"> <a href="images/portfolio/img9.jpg" class="fancybox">
-                    <h5>Project Name</h5>
-                    <i class="fa fa-plus-square-o fa-2x"></i></a> </div>
-                </div>
-              </div>
-            </article> -->
+      <aside class="hero-panel">
+        <h2>Construcción técnica con foco en entrega.</h2>
+        <p class="panel-stack-note">Producto estable, mantenible y listo para evolucionar.</p>
+        <div class="status-list">
+          <div>
+            <span>Base</span>
+            <strong>Alicante · Remoto</strong>
           </div>
+          <div>
+            <span>Foco</span>
+            <strong>Resolver problemas reales con criterio técnico</strong>
+          </div>
+          <div>
+            <span>Impacto</span>
+            <strong>Reducir fricción en entrega y mantenimiento</strong>
+          </div>
+        </div>
+        <div class="metric-grid">
+          <article>
+            <strong>Back-end</strong>
+            <span>Diseño de servicios y lógica de negocio</span>
+          </article>
+          <article>
+            <strong>Datos</strong>
+            <span>Persistencia, consultas y trazabilidad</span>
+          </article>
+          <article>
+            <strong>Web</strong>
+            <span>Interfaces web claras</span>
+          </article>
+          <article>
+            <strong>Entrega</strong>
+            <span>Git, Docker y Postman</span>
+          </article>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="shell section-grid section-grid-about">
+      <div class="portrait-card">
+        <img src="images/perfil/Foto.jpg" alt="Retrato de Francisco Rodríguez">
+      </div>
+      <div class="section-copy">
+        <p class="eyebrow">Perfil</p>
+        <h2>Ejecución, criterio técnico y mejora continua.</h2>
+        <p>Combino backend, persistencia de datos e interfaces web según la necesidad del producto. Priorizo diseño claro, estabilidad y evolución progresiva.</p>
+
+        <div class="timeline-grid">
+          <article>
+            <span>Arquitectura</span>
+            <strong>Diseño por capas</strong>
+            <p>Separación clara de responsabilidades.</p>
+          </article>
+          <article>
+            <span>Calidad</span>
+            <strong>Código mantenible</strong>
+            <p>Legibilidad, revisión y control de deuda técnica.</p>
+          </article>
+          <article>
+            <span>Automatización</span>
+            <strong>IA en workflow</strong>
+            <p>IA para análisis, prototipado y documentación técnica.</p>
+          </article>
+          <article>
+            <span>Evolución</span>
+            <strong>Aprendizaje activo</strong>
+            <p>Actualización constante en herramientas y prácticas.</p>
+          </article>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- 
-  Portfolio Grid Section 
- <section id="portfolio" class="bg-light-gray">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-12 text-center">
-              <h2 class="section-heading">Portfolio</h2>
-              <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                  <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-              </a>
-              <div class="portfolio-caption">
-                  <h4>Round Icons</h4>
-                  <p class="text-muted">Graphic Design</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                  <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-              </a>
-              <div class="portfolio-caption">
-                  <h4>Startup Framework</h4>
-                  <p class="text-muted">Website Design</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                  <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-              </a>
-              <div class="portfolio-caption">
-                  <h4>Treehouse</h4>
-                  <p class="text-muted">Website Design</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                  <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-              </a>
-              <div class="portfolio-caption">
-                  <h4>Golden</h4>
-                  <p class="text-muted">Website Design</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                  <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-              </a>
-              <div class="portfolio-caption">
-                  <h4>Escape</h4>
-                  <p class="text-muted">Website Design</p>
-              </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-              <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                  <div class="portfolio-hover">
-                      <div class="portfolio-hover-content">
-                          <i class="fa fa-plus fa-3x"></i>
-                      </div>
-                  </div>
-                  <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-              </a>
-              <div class="portfolio-caption">
-                  <h4>Dreams</h4>
-                  <p class="text-muted">Website Design</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</section> -->
+  </section>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2><strong>Página Web para Cristina García</strong></h2>
-                          <p class="item-intro text-muted">Diseño y desarrollo de una web particular</p>
-                          <br><br><br><br>
-                          <img class="img-responsive" src="images/Proyectos/ProyectoWebCris.png" alt="">
-                          <br><br><br><br>
-                          <p>Esta página web fue un proyecto para la profesional Cristina García Esparza y su empresa <b>"PorUnGoloMundoMejor"</b>. Tiene un diseño simple, atractivo y con una interfaz muy intuitiva. Puedes visitar la página desde este enlace <a href="Web Cris\index\index.html">PorUnGoloMundoMejor.com</a>.
-                            </p>
-                          <!-- <ul class="list-inline">
-                              <li>Date: July 2014</li>
-                              <li>Client: Round Icons</li>
-                              <li>Category: Graphic Design</li>
-                          </ul> -->
-                          <br><br><br><br>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar Proyecto</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
+  <section class="section section-contrast" id="stack">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow">Stack</p>
+        <h2>Ecosistema tecnológico en mi día a día.</h2>
+        <p>Conjunto de tecnologías y herramientas con las que diseño, implemento y opero soluciones en entornos reales.</p>
       </div>
-  </div>
 
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <h2>Project Heading</h2>
-                          <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                          <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-                          <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-                          <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Project Name</h2>
-                          <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                          <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                          <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-                          <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Project Name</h2>
-                          <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                          <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                          <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                          <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Project Name</h2>
-                          <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                          <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                          <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking for a simple one page solution to describe your business and offer your services.</p>
-                          <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                  <div class="rl">
-                  </div>
-              </div>
-          </div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <!-- Project Details Go Here -->
-                          <h2>Project Name</h2>
-                          <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                          <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                          <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
-                          <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
-                          <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-<!--Contact -->
-<section id="contactUs" class="page-section secPad">
-  <div class="container">
-    <div class="row">
-      <div class="heading"> 
-        <!-- Heading -->
-  <h2>Contact</h2>
-  <p>Thank you for visiting my website! Feel free to get in touch.</p>
-      </div>
+      <article class="stack-cloud-card" aria-label="Nube de stack técnico">
+        <div class="stack-cloud-mesh">
+          <span><img src="images/Iconos_Lenguajes/Java2.png" alt="Java">Java</span>
+          <span><img src="images/Iconos_Lenguajes/sql.png" alt="SQL">SQL</span>
+          <span><img src="images/Iconos_Tecnologias/spring.png" alt="Spring">Spring</span>
+          <span><img src="images/Iconos_Tecnologias/Postgresql.png" alt="PostgreSQL">PostgreSQL</span>
+          <span><img src="images/Iconos_Tecnologias/aws.png" alt="AWS">AWS</span>
+          <span><img src="images/Iconos_Tecnologias/Docker.png" alt="Docker">Docker</span>
+          <span><img src="images/Iconos_Tecnologias/Postman.png" alt="Postman">Postman</span>
+          <span><img src="images/Iconos_Lenguajes/git.png" alt="Git">Git</span>
+          <span><img src="images/Iconos_Tecnologias/Jira.png" alt="Jira">Jira</span>
+          <span><i class="fa fa-code" aria-hidden="true"></i>Angular</span>
+          <span><i class="fa fa-bug" aria-hidden="true"></i>Sentry</span>
+          <span><img src="images/Iconos_Lenguajes/js.png" alt="JavaScript">JavaScript</span>
+          <span><img src="images/Iconos_Lenguajes/html.png" alt="HTML">HTML</span>
+          <span><img src="images/Iconos_Lenguajes/css.png" alt="CSS">CSS</span>
+          <span><img src="images/Iconos_Lenguajes/Python.png" alt="Python">Python</span>
+          <span><img src="images/Iconos_Lenguajes/CSharp2.png" alt="C Sharp">C#</span>
+          <span><img src="images/Iconos_Lenguajes/php.png" alt="PHP">PHP</span>
+          <span><img src="images/Iconos_Lenguajes/bash.png" alt="Bash">Bash</span>
+        </div>
+      </article>
     </div>
-    <div class="row mrgn30">
-      <!-- <form method="post" action="" id="contactfrm" role="form">
-        <div class="col-sm-4">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="form-group">
-            <label for="comments">Comments</label>
-            <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-          </div>
-          <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
-          <div class="result"></div>
-        </div>
-      </form> -->
-      <!-- <div class="col-sm-4">
-        <h4>Address:</h4>
-        <address>
-        Steve Smith<br>
-        134 Stilla. Tae., 414515<br>
-        Leorislon, SA 02434-34534 USA <br>
-        </address>
-        <h4>Phone:</h4>
-        <address>
-        12345-49589-2<br>
-        </address>
-      </div> -->
+  </section>
 
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-              
-              <p>San Vicente del Raspeig</p>
-                <p>03690 Alicante<br>Paseo las Adelfas 6B</p>
-                <ul class="">
-                  <li>
-                    <a href="https://wa.me/647204276/"><i class="fa fa-phone fa-fw"></i>647 204 276</a>
-                  </li>
-                    <li>
-                       <a href="mailto:rodriguezxf@gmail.com"><i class="fa fa-envelope-o fa-fw"></i> rodriguezxf@gmail.com</a>
-                    </li>
-                </ul>
-                <br>
-                <div class="map-responsive">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12509.036662751516!2d-0.497437!3d38.3892563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6236c421ffcc3b%3A0x5b802fcf36b75759!2sP.%C2%BA%20las%20Adelfas%2C%206B%2C%2003690%20San%20Vicente%20del%20Raspeig%2C%20Alicante!5e0!3m2!1ses!2ses!4v1726158424302!5m2!1ses!2ses" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <br />
-                <small>
-                  <a href="https://maps.google.com/maps?f=q&source=embed&hl=es&geocode=&q=San+Vicente+del+Raspeig,+España&aq=0&oq=san+vicente&ie=UTF8&t=m&z=15&iwloc=A">View full map</a>
-                </small>
-                </iframe>
-                
-    <!-- Map -->
-    <!-- <section id="contact" class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-      <br />
-      <small>
-          <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-      </small>
-      </iframe>
-  </section> -->
-                <!-- <ul class="list-inline">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                    </li>
-                </ul> -->
-                <!-- <hr class="small">
-                <p class="text-muted">Copyright &copy; Your Website 2014</p> -->
+  <section class="section" id="aws-capabilities">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow">Capacidades AWS</p>
+        <h2>Lo que aporto con AWS.</h2>
+        <p>Operación directa en despliegue, datos y automatización.</p>
+      </div>
+
+      <div class="aws-cap-grid">
+        <article class="aws-cap-card">
+          <div class="aws-cap-head">
+            <span class="aws-cap-icon"><i class="fa fa-cubes" aria-hidden="true"></i></span>
+            <div>
+              <p class="project-tag">Contenedores</p>
+              <h3>ECR, ECS y EC2</h3>
             </div>
-        </div>
-    </div>
-    </div>
-  </div>
-  <!--/.container--> 
-</section>
+          </div>
+          <ul>
+            <li>Publicación y versionado de imágenes.</li>
+            <li>Ejecución estable de servicios.</li>
+          </ul>
+        </article>
 
-<!--/.page-section-->
-<footer class="copyright">
-  <div class="container">
+        <article class="aws-cap-card">
+          <div class="aws-cap-head">
+            <span class="aws-cap-icon"><i class="fa fa-database" aria-hidden="true"></i></span>
+            <div>
+              <p class="project-tag">Datos</p>
+              <h3>RDS y control SQL</h3>
+            </div>
+          </div>
+          <ul>
+            <li>Persistencia relacional en entorno gestionado.</li>
+            <li>Consultas y ajustes orientados a consistencia.</li>
+          </ul>
+        </article>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="social pull-left"> 
-          <!-- <a href="#"><i class="fa fa-twitter"></i></a> 
-          <a href="#"><i class="fa fa-facebook"></i></a> 
-          <a href="#"><i class="fa fa-linkedin-square"></i></a> 
-          <a href="#"><i class="fa fa-instagram"></i></a> 
-          <a href="#"><i class="fa fa-github"></i></a> 
-          <a href="#"><i class="fa fa-whatsapp"></i></a>  -->
+        <article class="aws-cap-card">
+          <div class="aws-cap-head">
+            <span class="aws-cap-icon"><i class="fa fa-bolt" aria-hidden="true"></i></span>
+            <div>
+              <p class="project-tag">Serverless</p>
+              <h3>Lambda para automatización</h3>
+            </div>
+          </div>
+          <ul>
+            <li>Tareas técnicas puntuales sin servidor dedicado.</li>
+            <li>Automatización de procesos repetitivos.</li>
+          </ul>
+        </article>
 
-          <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-          <!-- <a href="https://www.google.com/"><i class="fa fa-google-plus"></i></a> -->
-          <!-- <a href="https://www.dribbble.com/"><i class="fa fa-dribbble"></i></a> -->
-          <a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a>
-           <!-- <a href="https://www.pinterest.com/"><i class="fa fa-pinterest"></i></a> -->
-           <a href="https://github.com/"><i class="fa fa-github"></i></a> 
-           <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a> 
-           <a href="https://wa.me/647204276/"><i class="fa fa-phone fa-fw"></i></a> 
-           <a href="mailto:rodriguezxf@gmail.com"><i class="fa fa-envelope-o fa-fw"></i></a>
-        </div>
+        <article class="aws-cap-card">
+          <div class="aws-cap-head">
+            <span class="aws-cap-icon"><i class="fa fa-code-fork" aria-hidden="true"></i></span>
+            <div>
+              <p class="project-tag">Entrega continua</p>
+              <h3>CodeCommit y release</h3>
+            </div>
+          </div>
+          <ul>
+            <li>Versionado con trazabilidad de cambios.</li>
+            <li>Integración en flujo de despliegue continuo.</li>
+          </ul>
+        </article>
       </div>
-      <div class="col-md-6"> <span class="pull-right">Copyright 2024 | All Rights Reserved  -- Francisco Rodríguez</span> </div>
     </div>
-    <!-- / .row --> 
+  </section>
+
+  <section class="section section-contrast" id="advanced-projects">
+    <div class="shell">
+      <div class="section-heading">
+        <p class="eyebrow">Inteligencia artificial</p>
+        <h2>IA con criterio de ingeniería.</h2>
+        <p>Acelero ejecución sin delegar decisiones críticas.</p>
+      </div>
+
+      <div class="ai-layout">
+        <article class="ai-card ai-card-principles">
+          <p class="project-tag">Principios</p>
+          <h3>Cómo la uso</h3>
+          <div class="ai-principle-list">
+            <div><i class="fa fa-search" aria-hidden="true"></i><span>Análisis de alternativas</span></div>
+            <div><i class="fa fa-code" aria-hidden="true"></i><span>Aceleración de implementación</span></div>
+            <div><i class="fa fa-check-circle" aria-hidden="true"></i><span>Validación crítica antes de integrar</span></div>
+          </div>
+        </article>
+
+        <article class="ai-card ai-card-boundaries">
+          <p class="project-tag">Límites</p>
+          <h3>Dónde no delego</h3>
+          <div class="ai-boundary-grid">
+            <div>
+              <strong>Arquitectura</strong>
+              <span>Decisiones de diseño y límites de dominio.</span>
+            </div>
+            <div>
+              <strong>Seguridad y datos</strong>
+              <span>Validación final antes de producción.</span>
+            </div>
+          </div>
+          <p class="advanced-note">IA como multiplicador, no sustituto de responsabilidad técnica.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-contrast" id="contact">
+    <div class="shell contact-layout">
+      <div class="section-copy">
+        <p class="eyebrow">Contacto</p>
+        <h2>Disponible para proyectos con foco en calidad y evolución.</h2>
+        <p>Si buscas un perfil comprometido con producto robusto y mejora continua, podemos hablar.</p>
+      </div>
+
+      <div class="contact-card-grid">
+        <article class="contact-card">
+          <span>Email</span>
+          <a href="mailto:fra.rod@outlook.com">fra.rod@outlook.com</a>
+        </article>
+        <article class="contact-card">
+          <span>Teléfono</span>
+          <a href="tel:+34647204276">+34 647 204 276</a>
+        </article>
+        <article class="contact-card">
+          <span>Zona</span>
+          <p>Alicante y remoto</p>
+        </article>
+        <article class="contact-card">
+          <span>Respuesta</span>
+          <p>Correo o llamada para entrevistas y colaboraciones.</p>
+        </article>
+      </div>
+
+      <div class="contact-actions" aria-label="Canales directos de contacto">
+        <a class="contact-action" href="https://www.linkedin.com/in/francis-rodríguez-escortell-0ab021389/" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de LinkedIn">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a class="contact-action" href="https://github.com/Fra-Rod" target="_blank" rel="noopener noreferrer" aria-label="Ver perfil de GitHub">
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <span>GitHub</span>
+        </a>
+        <a class="contact-action" href="mailto:fra.rod@outlook.com" aria-label="Enviar email">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>Email</span>
+        </a>
+        <a class="contact-action" href="https://wa.me/34647204276" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-bar">
+    <p>Portfolio personal de Francisco Rodríguez.</p>
+    <p>&copy; <span id="current-year">2026</span> Todos los derechos reservados.</p>
   </div>
 </footer>
-<a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a> 
 
-<!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]--> 
-<script src="js/modernizr-latest.js"></script> 
-<script src="js/jquery-1.8.2.min.js" type="text/javascript"></script> 
-<script src="js/bootstrap.min.js" type="text/javascript"></script> 
-<script src="js/jquery.isotope.min.js" type="text/javascript"></script> 
-<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
-<script src="js/jquery.nav.js" type="text/javascript"></script> 
-<script src="js/jquery.cslider.js" type="text/javascript"></script> 
-<script src="js/jquery.diagram.js"></script> 
-<script src="js/custom.js" type="text/javascript"></script> 
-<script src="js/owl-carousel/owl.carousel.js"></script>
+<a class="back-to-top" href="#home" aria-label="Volver arriba">
+  <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a>
 
-
-<!-- 
-<script src="js/bootstrap2.min.js"></script>
-<script src="js/jquery.js"></script> -->
+<script src="js/custom.js"></script>
 </body>
 </html>
